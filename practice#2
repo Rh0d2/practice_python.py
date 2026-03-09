@@ -1,0 +1,9 @@
+#collect number
+num1 = int(innput("Enter first number:"))
+num2 = int(input("Enter second number"))
+
+#dictate if not equal
+if num1 == num2:
+    print("Numbers are equal")
+else
+    print("numbers are not equal")
