@@ -6,4 +6,4 @@ num2 = int(input("Enter the second number: "))
 if num1 == num2:
  print("Equal")
 else:
- print("Error")
+ print("Numbers are not equal")
