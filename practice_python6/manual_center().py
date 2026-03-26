@@ -1,14 +1,13 @@
-# This program does the same job as center()
+# This program does the same job as swapcase()
 user_text = input("Enter text: ")
-width = int(input("Enter total width: "))
+result = ""
 
-spaces_needed = width - len(user_text)
+for ch in user_text:
+    if 'A' <= ch <= 'Z':
+        result += chr(ord(ch) + 32)
+    elif 'a' <= ch <= 'z':
+        result += chr(ord(ch) - 32)
+    else:
+        result += ch
 
-if spaces_needed > 0:
-    left_spaces = spaces_needed // 2
-    right_spaces = spaces_needed - left_spaces
-    result = (" " * left_spaces) + user_text + (" " * right_spaces)
-else:
-    result = user_text
-
-print(f"'{result}'")
+print(result)
